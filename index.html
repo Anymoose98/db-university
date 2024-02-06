@@ -7,9 +7,12 @@
 </head>
 <body>
     <!-- Primo esercizio -->
-    <h2>SELECT `date_of_birth` FROM `students` WHERE `date_of_birth` LIKE '1990%';</h2>
+    <h2>SELECT `date_of_birth` FROM `students` WHERE YEAR(`date_of_birth`) = 1990;</h2>
 
     <!-- Secondo esercizio -->
-   <h2>SELECT `cfu` FROM `courses` WHERE `cfu` > 10;</h2>    
+   <h2>SELECT `cfu` FROM `courses` WHERE `cfu` > 10;</h2> 
+
+   <!-- Terzo esercizio -->
+   <h2></h2>
 </body>
 </html>
