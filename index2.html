@@ -32,8 +32,28 @@ GROUP BY
     AVG(`vote`)
 FROM
     `exam_student`;
-
+    
     <!-- Esercizio 4 -->
+    SELECT
+    COUNT(*) AS `numero_corsi`,
+    `department_id`
+FROM
+    `degrees`
+GROUP BY
+    `department_id`;
+
+    <!-- JOIN -->
+    <!-- Esercizio 1 -->
+    SELECT
+    `students`.*
+FROM
+    `students`
+JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id`
+WHERE
+    `degrees`.`name` = 'corso di economia'
+    <!-- Esercizio 2 -->
+
+    <!-- Esercizio 3 -->
 
 </body>
 </html>
